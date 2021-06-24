@@ -10,9 +10,30 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
     <title>Inicio</title>
+    
 </head>
 <body>
     
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-sm navbar-light fixed-top navColor">
+            <div class="navbar-hearder brand">
+                <a  class="navbar-brand navFont" href="#">Andar Por México</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#barra" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="barra">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link navFont" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link navFont" href="#quienesomos">¿Quiénes somos?</a></li>
+                    <li class="nav-item"><a class="nav-link navFont" href="#turismoenguanajuato">Turismo en Guanajuato</a></li>
+                    <li class="nav-item"><a class="nav-link navFont" href="#rutadelvino">Ruta del Vino</a></li>
+                    <li class="nav-item"><a class="nav-link navFont" href="#contactanos">Contáctanos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
     <section id="carrusel" class="carousel slide carousel-fade" data-ride="carousel">
         <ul class="carousel-indicators">
             <li data-target="#carrusel" data-slide-to="0" class="active"></li>
@@ -58,28 +79,126 @@
             <img src="https://www.guitartabsexplorer.com/images/tabs/misc-computer-games_among_us___drip_theme.jpg" class="card-img" id="imgTarjeta" alt="...">
             </div>
             <div class="col-md-8">
-            <div class="card-body">
+            <div class="card-body cuerpo">
                 <h3 class="card-title">¿Quienes somos?</h3>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
             </div>
         </div>
     </div>
 
-    <article class="container-fluid " id="contenedor">
-        <h2 class="text-center">Turismo en guanajuato</h2>
+    <article class="container-fluid" id="contenedor">
+        <h2 class="text-center" id="tituloImg">Turismo en guanajuato</h2>
         <div class="row">
-            <div class="col">
+            <div class="col colTextoImg">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, iusto. Voluptatibus, quia. Possimus repudiandae accusamus non id, quidem nostrum optio dolores quibusdam exercitationem nisi consequuntur, rem dolorum omnis modi delectus!</p>
             </div>
-            <div class="col">
+            <div class="col colTextoImg">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, iusto. Voluptatibus, quia. Possimus repudiandae accusamus non id, quidem nostrum optio dolores quibusdam exercitationem nisi consequuntur, rem dolorum omnis modi delectus!</p>
             </div>
         </div>
     </article>
 
+    <article class="container-fluid " id="tarjetas">    
+
+        <h2 class="text-center" id="tituloTarjetas">Rutas del vino</h2>
+
+          <section id="gallery">
+            <div class="container">
+              <div class="row">
+              <div class="col-md-4 mb-4">
+              <div class="card">
+                
+                <div class="card-body">
+                    <img src="https://images.unsplash.com/photo-1477862096227-3a1bb3b08330?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60" alt="" class="card-img-top">
+                  <h5 class="card-title">Sunset</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
+                 <a href="" class="btn btn-outline-success btn-sm">Read More</a>
+                  <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
+                </div>
+               </div>
+              </div>
+            <div class="col-md-4 mb-4">
+            <div class="card">
+                
+                <div class="card-body">
+                    <img src="https://images.unsplash.com/photo-1516214104703-d870798883c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60" alt="" class="card-img-top">
+                  <h5 class="card-title">Sunset</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
+                 <a href="" class="btn btn-outline-success btn-sm">Read More</a>
+                  <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
+                </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+              <div class="card">
+                
+                <div class="card-body">
+                    <img src="https://images.unsplash.com/photo-1477862096227-3a1bb3b08330?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60" alt="" class="card-img-top">
+                  <h5 class="card-title">Sunset</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
+                 <a href="" class="btn btn-outline-success btn-sm">Read More</a>
+                  <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
+                </div>
+               </div>
+              </div>
+            </div>
+          </div>
+          </section>
+
+
+    </article>
+
+    <div class="container" id="registration-form">
+        <div class="image"></div>
+        <div class="frm">
+            <h1>Contactanos</h1>
+            <form>
+                <div class="form-group">
+                    <label>Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Introduce tu nombre">
+                </div>
+                <div class="form-group">
+                    <label>Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Introduce tu email">
+                </div>
+                <div class="form-group">
+                    <label>Teléfono:</label>
+                    <input type="text" class="form-control" id="tel" placeholder="Introduce tu teléfono">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success btn-lg">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+       
+        <!-- Footer -->
+        <footer class="page-footer font-small bg-success text-white pt-4 py-3 row">
+            <div class="footer-copyright text-center col-6">© 2020 Copyright:
+                <a href="https://www.facebook.com/andarpormexico"> Andar por México</a>
+            </div>
+               <div class="container col-6">
+                <ul class="list-unstyled list-inline text-center">
+                  <li class="list-inline-item">
+                    <a class="fb-ic">
+                        <i class="fab fa-facebook-f text-white mr-md-5 mr-3 fa-2x"> </i>
+                      </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="ins-ic">
+                        <i class="fab fa-instagram text-white mr-md-5 mr-3 fa-2x"> </i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="ins-ic">
+                        <i class="fab fa-whatsapp text-white mr-md-5 mr-3 fa-2x"> </i>
+                    </a>
+                  </li>
+                </ul>
+            </div>
+         </footer>
     
-    
-</body>
+
+</body> 
 </html>
