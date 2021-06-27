@@ -61,6 +61,11 @@
 }
 
 /*Tarjetas*/
+.colCard{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .card:hover{
     
     transition: box-shadow .3s ease-in-out;
