@@ -1,41 +1,123 @@
-.navFont{
-    color: rgb(0, 0, 0) !important;
+*{
+    /*font-family: 'Nunito', sans-serif;*/
+    font-family: 'Mukta', sans-serif;
+}
+
+.navFont, .iconoLogo{
+    color: #fff !important;
     letter-spacing: 1px;
+}
+.navFont:hover{
+    background: #006F14;
+    height: 100%;
 }
 
 .navColor{
-    background-color: rgb(168, 233, 168);
+    background-color: green;
+}
+
+
+.carousel-caption{
+    top: 50%;
+}
+
+.carousel-item{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
 }
 
 .imgSlider{
     width: 100%;
-    height: 600px;
+    height: auto
+}
+
+@media screen and (max-width: 900px){
+    .imgSlider{
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    #carrusel{
+        display: none;
+    }
+}
+
+@media (max-width: 700px){
+    .card-title{
+        text-align: center;
+    }
+}
+
+
+
+.card:hover{
+    
+    transition: box-shadow .3s ease-in-out;
+}
+
+.card-body{
+    text-align: justify;
+}
+
+#c1:hover{
+    transition: background-color .3s ease-in-out;
+    background-color: #db003b;
+    box-shadow: 5px 5px 5px gray;
+}
+
+#c2:hover{
+    transition: background-color .3s ease-in-out;
+    background-color: #06a2a8;
+    box-shadow: 5px 5px 5px gray;
+}
+
+#c3:hover{
+    transition: background-color .3s ease-in-out;
+    background-color: #7de400;
+    box-shadow: 5px 5px 5px gray;
+}
+
+#gallery .card-body{
+    text-align: justify;
+}
+
+#imgTarjeta{
+    margin-left: 10%;
+    width: auto;
+    height: 100%;
+}
+
+.imgSomos{
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+#gallery .card-body h5{
+    text-align: center;
 }
 
 .cuerpo{
-    
     padding: 5%;
-    padding-top: 10%;
-    padding-left: 0%;
     width: 100%;
     height: 100%;
 }
 
 .colTextoImg{
     color: white;
-    font-size: large;
+    text-align: justify;
 }
 
 #tarjetas{
     padding: 5%;
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, .125);
-    border-radius: 0;
 }
 
 #tarjetasCuerpo{
     padding: 0.5em;
-
+    background: rgb(168, 233, 168);
 }
 
 #contenedor{
@@ -45,13 +127,35 @@
     height: 400px;
     background-image: url("https://blog.naturlider.com/wp-content/uploads/2020/03/AdobeStock_309195144-post-dia-mundial-naturaleza.jpeg");
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-#imgTarjeta{
-    padding: 10%;
-    padding-left: 25%;
-    width: auto;
-    height: 100%;
+.row{
+    margin-top: 50px;
+    margin-right: 0;
+}
+
+
+
+@media screen and (max-width: 768px){
+    .imgSomos{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .card-body{
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .card-body{   
+        margin-top: 0;
+    }
 }
 
 #tituloImg{
@@ -70,8 +174,17 @@
     height: 40px;
 }
 
-.row{
-    margin-top: 50px;
+@media screen and (max-width: 700px){
+    article .row .col{
+    flex: 0 0 100%;
+    }
+    .row{
+        display: block;
+    }
+    .footer-copyright{
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
 }
 
 #registration-form{
@@ -80,7 +193,7 @@
     display: flex;
 }
 #registration-form .image{
-	flex: 0 0 calc(50% - 10px);
+	flex: 0 0 calc(50%);
     background-image: url("../img/desk.jpg");
 	height: 500px;
 	width: 50%;
@@ -88,7 +201,7 @@
 	background-position: 25%;
 }
 #registration-form .frm{
-    flex: 0 0 calc(50% - 10px);
+    flex: 0 0 calc(50%);
     width: 50%;
     min-width: 250px;
     padding: 0 35px;
@@ -100,6 +213,12 @@
 #registration-form h1{
 	margin-top: 30px;
 	margin-bottom: 20px;
+}
+
+@media (max-width: 700px){
+    #registration-form h1{
+        font-size: 30px;
+    }
 }
 
 #registration-form .form-control{
@@ -123,7 +242,7 @@
 	}
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 650px){
 	#registration-form .image{
 		display: none;
 	}

@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" 
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
     <title>Inicio</title>
     
@@ -15,9 +19,9 @@
 <body>
     
     <header class="container-fluid">
-        <nav class="navbar navbar-expand-sm navbar-light fixed-top navColor">
+        <nav class="navbar navbar-expand-sm navbar-light fixed-top bg-success">
             <div class="navbar-hearder brand">
-                <a  class="navbar-brand navFont" href="#">Andar Por México</a>
+                <a  class="navbar-brand iconoLogo" href="#">Andar Por México</a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#barra" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -35,17 +39,18 @@
     </header>
 
     <section id="carrusel" class="carousel slide carousel-fade" data-ride="carousel">
+        <!--
         <ul class="carousel-indicators">
             <li data-target="#carrusel" data-slide-to="0" class="active"></li>
             <li data-target="#carrusel" data-slide-to="1"></li>
             <li data-target="#carrusel" data-slide-to="2"></li>
         </ul>
-
+        -->
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img class="imgSlider" src="img/amacas.jpg" alt="Imagen 1 del slider" >
                 <div class="carousel-caption">
-                    <h3>¡Tómate unas vacaciones!</h3>
+                    <h1>¡Tómate unas vacaciones!</h1>
                     <p>Viaja a cualquier parte de México</p>
                 </div>
             </div>
@@ -53,7 +58,7 @@
             <div class="carousel-item">
                 <img class="imgSlider" src="img/puente.jpg" alt="Imagen 2 del slider" >
                 <div class="carousel-caption">
-                    <h3>Andar Por México</h3>
+                    <h1>Andar Por México</h1>
                     <p>Disfruta de bellos paisajes</p>
                 </div>
             </div>
@@ -61,7 +66,7 @@
             <div class="carousel-item">
                 <img class="imgSlider" src="img/rio.jpg" alt="Imagen 3 del slider" >
                 <div class="carousel-caption">
-                    <h3>Las mejores experiencias</h3>
+                    <h1>Las mejores experiencias</h1>
                     <p>Vive experiencias inolvidables</p>
                 </div>
             </div>
@@ -73,28 +78,42 @@
 
     
 
-    <div class=" mb-3 " id="tarjeta">
-        <div class="row no-gutters">
-            <div class="col-md-4" id="colTarjeta" >
-            <img src="https://www.guitartabsexplorer.com/images/tabs/misc-computer-games_among_us___drip_theme.jpg" class="card-img" id="imgTarjeta" alt="...">
+    <div class="mb-4 media" id="tarjeta">
+            <img src="https://www.guitartabsexplorer.com/images/tabs/misc-computer-games_among_us___drip_theme.jpg" class="align-self-center mr-3 imgSomos" id="imgTarjeta" alt="...">
+
+            <div class="media-body cuerpo">
+                <h1 class="mt-0">¿Quienes somos?</h1>
+                <h5>
+                    <p class="card-text">
+                    Somos una Operadora Turística receptiva, sustentable e incluyente 
+                    Diseñamos tours y circuitos encaminada a satisfacer los requerimientos del cliente generando experiencias extraordinarias en:
+                    </p>
+                
+                    <ul>
+                        <li>Pueblos Magicos</li>
+                        <li>Turismo de negocios</li>
+                        <li>Ciudades  Patrimonio</li>
+                        <li>Turismo enológico</li>
+                    </ul>
+
+                    <p>promoviendo el desarrollo de la Industria turística en León Gto. y la Región. </p>
+                </h5>
+
             </div>
-            <div class="col-md-8">
-            <div class="card-body cuerpo">
-                <h3 class="card-title">¿Quienes somos?</h3>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-            </div>
-        </div>
     </div>
 
     <article class="container-fluid" id="contenedor">
         <h2 class="text-center" id="tituloImg">Turismo en guanajuato</h2>
         <div class="row">
             <div class="col colTextoImg">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, iusto. Voluptatibus, quia. Possimus repudiandae accusamus non id, quidem nostrum optio dolores quibusdam exercitationem nisi consequuntur, rem dolorum omnis modi delectus!</p>
+                <p>
+                    El estado de Guanajuato ofrece todos sus encantos al viajero, que llega atraído por la fama de sus monumentos, de su ambiente y sus rincones secretos, Viajar en el estado es generar increíbles experiencias en las diferentes rutas que forman parte de nuestro programa.
+                </p>
             </div>
             <div class="col colTextoImg">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, iusto. Voluptatibus, quia. Possimus repudiandae accusamus non id, quidem nostrum optio dolores quibusdam exercitationem nisi consequuntur, rem dolorum omnis modi delectus!</p>
+                <p>
+                    Ven y disfruta con nosotros la magia que el estado nos ofrece, al descubrir los increíbles viñedos que se ubican dentro del estado por medio de nuestra “Ruta del vino” incluyendo a esto la maravilla de conocer Guanajuato capital y diferentes puntos pertenecientes a la ciudad de León.
+                </p>
             </div>
         </div>
     </article>
@@ -107,38 +126,29 @@
             <div class="container">
               <div class="row">
               <div class="col-md-4 mb-4">
-              <div class="card">
-                
-                <div class="card-body">
-                    <img src="https://images.unsplash.com/photo-1477862096227-3a1bb3b08330?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60" alt="" class="card-img-top">
-                  <h5 class="card-title">Sunset</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
-                 <a href="" class="btn btn-outline-success btn-sm">Read More</a>
-                  <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
+            <div class="card" id="c1">
+                <img src="https://images.unsplash.com/photo-1477862096227-3a1bb3b08330?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60" alt="" class="card-img-top">
+                <div class="card-body" > 
+                  <h5 class="card-title">Rutas del vino</h5>
+                  <p class="card-text">Vive la experiencia que va de conocer la Cultura, Arte y caminar entre vides en el viñedo el Lobo, catar los sabores de Guanajuato en una copa, visítanos y conoce todo lo que nuestra ciudad y sus viñedos cercanos tiene para ti.</p>
                 </div>
-               </div>
-              </div>
+            </div>
+                </div>
             <div class="col-md-4 mb-4">
-            <div class="card">
-                
-                <div class="card-body">
-                    <img src="https://images.unsplash.com/photo-1516214104703-d870798883c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60" alt="" class="card-img-top">
-                  <h5 class="card-title">Sunset</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
-                 <a href="" class="btn btn-outline-success btn-sm">Read More</a>
-                  <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
+            <div class="card" id="c2">
+                <img src="https://images.unsplash.com/photo-1516214104703-d870798883c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60" alt="" class="card-img-top">
+                <div class="card-body" >
+                  <h5 class="card-title">Las huellas de León</h5>
+                  <p class="card-text">Si eres de León o vienes de visita vive una agradable experiencia de turismo cultural en este City Tour, acompañada de un guía que te lleva a conocer Museos, edificios, calles que muestra nuestra identidad leonesa</p>
                 </div>
                 </div>
               </div>
               <div class="col-md-4 mb-4">
-              <div class="card">
-                
-                <div class="card-body">
-                    <img src="https://images.unsplash.com/photo-1477862096227-3a1bb3b08330?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60" alt="" class="card-img-top">
-                  <h5 class="card-title">Sunset</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
-                 <a href="" class="btn btn-outline-success btn-sm">Read More</a>
-                  <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
+              <div class="card" id="c3">
+                <img src="https://images.unsplash.com/photo-1477862096227-3a1bb3b08330?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60" alt="" class="card-img-top">
+                  <div class="card-body" >
+                  <h5 class="card-title">Octágono</h5>
+                  <p class="card-text">En esta ruta vive una experiencia inolvidable de turismo alternativo en Guanajuato con de un día lleno de historia y diversión recorre y conoce la Ciudad de León más de cerca degusta de su gastronomía más tarde visitando la Vinícola Octágono                </p>
                 </div>
                </div>
               </div>
@@ -178,7 +188,7 @@
             <div class="footer-copyright text-center col-6">© 2020 Copyright:
                 <a href="https://www.facebook.com/andarpormexico"> Andar por México</a>
             </div>
-               <div class="container col-6">
+               <div class="container col-6 text-center">
                 <ul class="list-unstyled list-inline text-center">
                   <li class="list-inline-item">
                     <a class="fb-ic">
@@ -186,13 +196,13 @@
                       </a>
                   </li>
                   <li class="list-inline-item">
-                    <a class="ins-ic">
+                    <a class="fb-ic">
                         <i class="fab fa-instagram text-white mr-md-5 mr-3 fa-2x"> </i>
                     </a>
                   </li>
                   <li class="list-inline-item">
                     <a class="ins-ic">
-                        <i class="fab fa-whatsapp text-white mr-md-5 mr-3 fa-2x"> </i>
+                        <i class="fab fa-whatsapp text-white mr-md-5 fa-2x"> </i>
                     </a>
                   </li>
                 </ul>
@@ -200,5 +210,5 @@
          </footer>
     
 
-</body> 
+    </body> 
 </html>
