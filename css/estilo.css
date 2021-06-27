@@ -3,6 +3,12 @@
     font-family: 'Mukta', sans-serif;
 }
 
+.titulo{
+    font-size: 40px;
+}
+
+/*Nav*/
+
 .navFont, .iconoLogo{
     color: #fff !important;
     letter-spacing: 1px;
@@ -16,7 +22,9 @@
     background-color: green;
 }
 
+/*Nav*/
 
+/*Slider*/
 .carousel-caption{
     top: 50%;
 }
@@ -44,14 +52,15 @@
     }
 }
 
+/*Slider*/
+
 @media (max-width: 700px){
     .card-title{
         text-align: center;
     }
 }
 
-
-
+/*Tarjetas*/
 .card:hover{
     
     transition: box-shadow .3s ease-in-out;
@@ -83,6 +92,17 @@
     text-align: justify;
 }
 
+#gallery .card-body h5{
+    text-align: center;
+}
+
+#tituloTarjetas{
+    margin-bottom: 5%;
+}
+/*Tarjetas*/
+
+
+/*Somos*/
 #imgTarjeta{
     margin-left: 10%;
     width: auto;
@@ -94,8 +114,22 @@
     margin: 0 auto;
 }
 
-#gallery .card-body h5{
-    text-align: center;
+@media screen and (max-width: 768px){
+    .imgSomos{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .media-body{
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .media-body{   
+        margin-top: 0;
+    }
 }
 
 .cuerpo{
@@ -103,7 +137,9 @@
     width: 100%;
     height: 100%;
 }
+/*Somos*/
 
+/*Texto sobre img*/
 .colTextoImg{
     color: white;
     text-align: justify;
@@ -115,10 +151,6 @@
     border: 1px solid rgba(0, 0, 0, .125);
 }
 
-#tarjetasCuerpo{
-    padding: 0.5em;
-    background: rgb(168, 233, 168);
-}
 
 #contenedor{
     margin: 0px;
@@ -138,41 +170,14 @@
     margin-right: 0;
 }
 
-
-
-@media screen and (max-width: 768px){
-    .imgSomos{
-        display: none;
-    }
-}
-
-@media screen and (max-width: 700px){
-    .card-body{
-        margin-top: 100px;
-    }
-}
-
-@media screen and (max-width: 576px){
-    .card-body{   
-        margin-top: 0;
-    }
-}
-
 #tituloImg{
     color: white;
-    font-size: xx-large;
     margin-bottom: 5%;
 }
+/*Texto sobre img*/
 
-#tituloTarjetas{
-    font-size: xx-large;
-    margin-bottom: 5%;
-}
 
-#logo{
-    width: 40px;
-    height: 40px;
-}
+/*Form*/
 
 @media screen and (max-width: 700px){
     article .row .col{
@@ -260,4 +265,6 @@
 		width: 100%;
 		margin-top: 20px;
 	}
+
+    /*Forms*/
 }
