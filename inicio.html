@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JGEJRX0RPN"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-JGEJRX0RPN');
-    </script>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="Description" content="Andar Por México. Tour Operadora Turísticas receptiva en León, Guanajuato"/>
@@ -193,30 +184,64 @@
                             <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL">
                         </div>
                         <div class="mc-field-group">
-                            <label for="mce-FNAME">Nombre(s) </label>
+                            <label for="mce-FNAME">Nombre(s)</label>
                             <input type="text" value="" name="FNAME" class="form-control" id="mce-FNAME">
                         </div>
                         <div id="mce-responses" class="clear">
                             <div class="response" id="mce-error-response" style="display:none"></div>
                             <div class="response" id="mce-success-response" style="display:none"></div>
                         </div>
-                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_7c06ed08594bb29ad622e622e_aa122f5f7d" tabindex="-1" value=""></div>
-                            <div class="clear mt-2"><input type="submit" value="Registrar" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success btn-lg button"></div>
+                        <div class="botonEnviar" aria-hidden="true"><input type="text" name="b_7c06ed08594bb29ad622e622e_aa122f5f7d" tabindex="-1" value=""></div>
+                        <div class="clear mt-2"><input type="submit" value="Registrar" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success btn-lg button"></div>
                     </div>
                 </form>
             </div>
         </div>
-        <div class="container mx-auto">
-            <p>Los datos personales que recabamos de usted, los utilizaremos para las siguientes finalidades que son necesarias para el servicio que solicita:
-                Respuesta a mensajes del formulario de contacto</p>
-            <p>Para mas información: andarpormexico@gmail.com</p>
-        </div> 
+        
+        
+         
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+          
+                
+                <div class="modal-header">
+                  <h4 class="modal-title">Aviso de privacidad</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+          
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <p>Andar por México, con domicilio en León, Guanajuato, México, es el responsable del uso y protección de sus datos personales, y al respecto le informamos lo siguiente:</p>
+                    <br>
+                    <p class="font-weight-bold">¿Para qué fines utilizaremos sus datos personales?</p>
+                    <br>
+                    <p>Los datos personales que recabamos de usted, los utilizaremos para las siguientes finalidades que son necesarias para el servicio que solicita:</p>
+                    <br>
+                    <p>Respuesta a mensajes del formulario de contacto y publicidad</p>
+                    <br>
+                    <p class="font-weight-bold">¿Dónde puedo consultar el aviso de privacidad integral?</p>
+                    <p>Para conocer mayor información sobre los términos y condiciones en que serán tratados sus datos personales, como los terceros con quienes compartimos su información personal y la forma en que podrá ejercer sus derechos ARCO, puede consultar el aviso de privacidad integral con una petición vía correo electrónico:</p>
+                    <br>
+                    <p>andarpormexico@gmail.com</p>
+                    <p>Última actualización de este aviso de privacidad: 06/07/2021</p>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
     </div>
        
         <!-- Footer -->
         <footer class="page-footer font-small bg-success text-white pt-4 py-3 row">
             <div class="footer-copyright text-center col-6">© 2020 Copyright:
                 <a href="https://www.facebook.com/andarpormexico"> Andar por México</a>
+            </div>
+            <div class="footer-copyright text-center  col-6">
+                <a href="" data-toggle="modal" data-target="#myModal">Aviso de privacidad</a>
             </div>
                <div class="container col-6 text-center">
                 <ul class="list-unstyled list-inline text-center">
@@ -245,7 +270,6 @@
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
            AOS.init({duration:1500});
-        </script>
-        
+        </script>       
 </body> 
 </html>
